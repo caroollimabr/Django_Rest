@@ -5,6 +5,5 @@ class Course(models.Model):
     language = models.CharField(max_length=100)
     price = models.FloatField(blank=False, default=0.00)
 
-    def __str__(self):
+    def __str__(self):  # returns the name on the list (admin - DB)
         return self.name
-    
